@@ -145,3 +145,23 @@ We won't be using WINS, so click "Next." Activate the scope and click "Next" to 
 
 ![1 31 9 DHCP](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/d54de29d-3586-45ec-a8a6-796e6bd725f5)
 
+
+### Joining the Domain in Windows 10
+
+After installing Windows 10 on the virtual machine, go to "This PC," "Properties," and "Change PC name." 
+
+![2 1 W10 setup](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/5c70fb27-8d15-4607-8e40-2befd594018a)
+![2 2ChangeName](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/42b61d01-b926-4f13-bb74-723659cbf77b)
+
+
+Here, you will find the option to change the computer's name and to join it to the domain. 
+
+![2 3-JoinDomain](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/5f2178c0-3a24-4c85-b3ff-acd843175403)
+![2 4-JoiningDomain](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/c9c83075-2764-4475-8575-640158e1f483)
+
+You will need to enter the username and password of your domain administrator to proceed. A reboot will be necessary for the changes to take effect.
+
+![2 x1-IPConfig](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/eff5784f-088b-44b8-9797-3126e0f92d6f)
+![2 x-connectivity test](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/5ef680f0-ab05-45a9-9b5d-deda4a725c65)
+
+If you check with ipconfig, you can see that we have been assigned an IP from the DHCP scope we created. Additionally, we can successfully ping our server. When we ping google.com, we can confirm that our DNS server is functioning correctly.
