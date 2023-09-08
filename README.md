@@ -10,6 +10,8 @@ Windows ISO (Version 10 was used for this project).
 
 Any virtualization tool (Oracle VM Virtual Box was used in this project).
 
+[PowerShell Script for mass user creation.](https://github.com/AlduVG/PowerShellScript)
+
 ## Lab diagram.
 
 ![Diagram](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/bbac80a5-e27d-43b5-aec2-ee8504a8fa43)
