@@ -165,3 +165,7 @@ You will need to enter the username and password of your domain administrator to
 ![2 x-connectivity test](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/5ef680f0-ab05-45a9-9b5d-deda4a725c65)
 
 If you check with ipconfig, you can see that we have been assigned an IP from the DHCP scope we created. Additionally, we can successfully ping our server. When we ping google.com, we can confirm that our DNS server is functioning correctly.
+
+![2 5-ADUsers](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/50502321-6669-4892-9c93-fbf11cc1a55c)
+
+If we check in our Server under "Active Directory Users and Computers," we can find the computer we just added to the domain.
