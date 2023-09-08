@@ -169,3 +169,24 @@ If you check with ipconfig, you can see that we have been assigned an IP from th
 ![2 5-ADUsers](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/50502321-6669-4892-9c93-fbf11cc1a55c)
 
 If we check in our Server under "Active Directory Users and Computers," we can find the computer we just added to the domain.
+
+### PowerShell mass user creation.
+[This site was used to generate 1000 random names.](https://1000randomnames.com)
+
+[I downloaded the files in the virtual box from this link.](https://github.com/AlduVG/PowerShellScript)
+
+Before proceeding, we will go to the local server and disable "Enhanced Security Configuration in IE" by turning off both options. Now, I will go to my own repository to download the zip file containing the list of users we are going to create, as well as the PowerShell script to automate user creation. I'll save these documents on the desktop.
+
+![3 1 IE](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/75d16690-a62e-48a9-93d0-758c61ceaeaa)
+
+We will run PowerShell ISE as administrators. Open our script, navigate to the "Desktop" folder to execute our file, and enter the following command: "Set-ExecutionPolicy Unrestricted".
+
+![3 2 PowerShell ISE](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/347ef6f0-744a-4b50-b6ef-dc5729d5eaa5)
+![3 3](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/176a5183-924d-4c86-b6bf-e392a5c43e63)
+
+Note: This is not recommended for production systems, as it completely disables the execution policy and allows the execution of any script without restrictions. Since this is a lab, there's no issue with doing this.
+
+![3 4 Users created](https://github.com/AlduVG/Active-Directory-Lab/assets/131760637/97e37e9e-11ea-4a07-91cd-70aa11ef8edc)
+
+If we go to "Active Directory Users and Computers," we can see the _USERS folder and the created users. Some of these users may not have been created because they were duplicated in the file. Now, we can go to our Windows client and try any of these users.
+
